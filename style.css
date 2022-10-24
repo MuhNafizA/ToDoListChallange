@@ -1,0 +1,110 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+body{
+    background: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vh;
+
+}
+
+.title {
+    font-size: 30;
+    font-weight: 600;
+    color: rgb(137, 96, 46);
+    letter-spacing: 1px;
+    margin: 30px 0px;
+}
+
+.todo_list {
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0px 10px 40px rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: blanchedalmond;
+} 
+
+.content_list{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.entered_list{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffff;
+    font-size: 1px;
+    outline: none;
+}
+
+.add-list {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(219, 152, 18);
+    outline: none;
+    font-size: 16px;
+    color: rgb(96, 63, 24) ;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.tasks {
+    width: 100%;
+    margin-top: 30px ;
+}
+
+.item {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item p {
+    font-size: 10px;
+    font-weight: 10px;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+.item .completed p {
+    text-decoration: line-through;
+    color: #111111;
+}
+
+.item .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item .btn {
+    color: rgb(137, 96, 46);
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.item .btn i {
+    color: rgb(137, 96, 46);
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+
